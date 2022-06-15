@@ -1,0 +1,10 @@
+Access Key ID:
+AKIA5O4U6RJQWQ4Y7JWO
+Secret Access Key:
+nXNsZrfL7dwolbUTXjllTW5ENmOio2dqNpGR7QYU
+
+
+com.goldenthinker.trade.log.bucket
+[default]
+aws_access_key_id=AKIA5O4U6RJQWQ4Y7JWO
+aws_secret_access_key=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

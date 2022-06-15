@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Past Signals Service
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/crypto_trading
+ExecStart=/usr/local/bin/python /crypto_trading/gt_signals_from_telegram_crawler.py
+
+[Install]
+WantedBy=multi-user.target

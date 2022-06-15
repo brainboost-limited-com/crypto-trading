@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitors Existing Orders and Triggers Buy
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/crypto_trading
+ExecStart=/usr/local/bin/python crypto_trading/gt_buy_service.py
+
+[Install]
+WantedBy=multi-user.target

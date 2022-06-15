@@ -1,0 +1,12 @@
+[Unit]
+Description=Golden Thinker Investor Dashboard
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/crypto_trading
+Restart=on-failure
+ExecStart=/usr/local/bin/python /crypto_trading/com_goldenthinker_trade_web/manage.py runserver 0.0.0.0:8000
+
+[Install]
+WantedBy=multi-user.target

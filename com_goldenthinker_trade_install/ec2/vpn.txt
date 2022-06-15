@@ -1,0 +1,11 @@
+TelegramListenerVPN
+
+(base) ubuntu@ip-172-31-25-42:~$ sudo ip rule add from 52.18.50.211 table 128
+(base) ubuntu@ip-172-31-25-42:~$ sudo ip route add table 128 to 172.31.16.0/20 dev eth0
+sudo ip route add table 128 default via 172.31.25.42
+
+
+enable dhcp ubuntu
+
+
+sudo ifconfig eno1 0.0.0.0 0.0.0.0 && dhclient

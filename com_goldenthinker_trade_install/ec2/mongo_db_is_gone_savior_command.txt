@@ -1,0 +1,4 @@
+mongod --fork --logpath /var/log/mongodb.log --dbpath /var/lib/mongodb
+
+https://stackoverflow.com/questions/41704679/mongodb-data-disappeared
+

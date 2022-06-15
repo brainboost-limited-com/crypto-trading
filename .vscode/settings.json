@@ -1,0 +1,8 @@
+{
+    "activestate.promptRuntimeCreation": false,
+    "python.analysis.extraPaths": [
+        "./com_goldenthinker_trade_exchange/com_goldenthinker_trade_exchange_kraken/python3-krakenex",
+        "./com_goldenthinker_trade_exchange/com_goldenthinker_trade_exchange_kraken/kraken-wsclient-py/kraken_wsclient_py",
+        "./modified_packages/telethon_async"
+    ]
+}

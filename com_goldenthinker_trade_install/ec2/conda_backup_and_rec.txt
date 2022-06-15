@@ -1,0 +1,20 @@
+To create this spec list as a file in the current working directory, run:
+
+conda list --explicit > spec-file.txt
+Note
+
+You can use spec-file.txt as the filename or replace it with a filename of your choice.
+
+An explicit spec file is not usually cross platform, and therefore has a comment at the top such as # platform: osx-64 showing the platform where it was created. This platform is the one where this spec file is known to work. On other platforms, the packages specified might not be available or dependencies might be missing for some of the key packages already in the spec.
+
+To use the spec file to create an identical environment on the same machine or another machine:
+
+conda create --name myenv --file spec-file.txt
+To use the spec file to install its listed packages into an existing environment:
+
+conda install --name myenv --file spec-file.txt
+
+
+assign python 3.9.5 tp conda crypto_env
+
+conda create --name crypto_env --file ec2/crypto_env.txt python=3.9.5

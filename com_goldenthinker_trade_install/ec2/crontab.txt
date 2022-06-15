@@ -1,0 +1,2 @@
+0 */1 * * * /home/goldenthinker/miniconda3/bin/python /home/goldenthinker/crypto_trading/robot.py
+0 */24 * * * /home/goldenthinker/miniconda3/bin/python /home/goldenthinker/crypto_trading/compress_logs.py

@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Communication Web Service
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/crypto_trading
+ExecStart=/usr/local/bin/python /crypto_trading/gt_telegram_webgateway.py
+
+[Install]
+WantedBy=multi-user.target

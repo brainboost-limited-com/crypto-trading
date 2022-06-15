@@ -1,0 +1,46 @@
+{
+  "_comments": [
+    "Valid terminals include: 'Terminal.app' or 'iTerm'",
+    "In the editor value change 'default' to 'nano', 'vi', or another terminal based editor.",
+    "Hosts will also be read from your ~/.ssh/config or /etc/ssh_config file, if available",
+    "For more information on how to configure, please see http://fitztrev.github.io/shuttle/"
+  ],
+  "editor": "default",
+  "launch_at_login": false,
+  "terminal": "Terminal.app",
+  "iTerm_version": "nightly",
+  "default_theme": "Homebrew",
+  "open_in": "new",  
+  "show_ssh_config_hosts": false,
+  "ssh_config_ignore_hosts": [  ],
+  "ssh_config_ignore_keywords": [  ],
+  "hosts": [
+    {
+      "cmd": "ssh root@mail.goldenthinker.com",
+      "name": "mail.goldenthinker.com"
+    },
+    {
+      "cmd": "ssh root@www.phyllismarywalsh.com",
+      "name": "www.phyllismarywalsh.com"
+    },
+    {
+      "cmd": "ssh -i \"/Users/goldenthinker/Downloads/ticker.pem\" ec2-user@ec2-3-250-237-127.eu-west-1.compute.amazonaws.com",
+      "name": "com_goldenthinker_trade_server_mongodb"
+    },
+    {
+      "cmd": "ssh -i \"/Users/goldenthinker/Downloads/ticker.pem\" ec2-user@ec2-34-243-164-12.eu-west-1.compute.amazonaws.com",
+      "name": "com_goldenthinker_trade_server_ticker"
+    },
+    {
+      "cmd": "ssh -i \"/Users/goldenthinker/Downloads/ticker.pem\" ec2-user@ec2-54-74-138-199.eu-west-1.compute.amazonaws.com",
+      "name": "com_goldenthinker_trade_server_orders"
+    },
+    {
+      "cmd": "ssh -i \"/Users/goldenthinker/Downloads/ticker.pem\" ec2-user@ec2-54-216-249-207.eu-west-1.compute.amazonaws.com",
+      "name": "com_goldenthinker_trade_server_alive"
+    }
+    
+    
+    
+  ]
+}

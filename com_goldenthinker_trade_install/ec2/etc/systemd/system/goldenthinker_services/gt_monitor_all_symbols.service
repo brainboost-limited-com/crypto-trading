@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitor All Symbols Service
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/crypto_trading
+ExecStart=/usr/local/bin/python /crypto_trading/gt_monitor_all_symbols.py
+
+[Install]
+WantedBy=multi-user.target

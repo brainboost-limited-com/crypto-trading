@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Incoming Signal Service
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/crypto_trading
+ExecStart=/usr/local/bin/python /crypto_trading/gt_telegram_incoming_signal.py
+
+[Install]
+WantedBy=multi-user.target

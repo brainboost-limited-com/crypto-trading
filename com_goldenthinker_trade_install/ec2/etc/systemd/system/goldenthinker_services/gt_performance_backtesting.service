@@ -1,0 +1,11 @@
+[Unit]
+Description=Signal Backtesting Performance
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/crypto_trading
+ExecStart=/usr/local/bin/python /crypto_trading/gt_performance_backtesting.py
+
+[Install]
+WantedBy=multi-user.target

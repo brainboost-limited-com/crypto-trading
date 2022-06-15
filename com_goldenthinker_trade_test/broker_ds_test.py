@@ -1,0 +1,9 @@
+from com_goldenthinker_trade_datasource.DataSourceManager import DataSourceManager
+from com_goldenthinker_trade_datasource.StrategyRealTimeDataSource import StrategyRealTimeDataSource
+
+#Strategy_ds = StrategyRealTimeDataSource('Strategy_math_1')
+#Strategy_ds.for_each_symbol_calculate_sequence_average_in_the_last_minutes()
+
+
+average_sequence_per_symbol_in_the_last_minutes_ds = DataSourceManager._data_sources['average_sequence_per_symbol_in_the_last_minutes']
+average_sequence_per_symbol_in_the_last_minutes_ds.start()

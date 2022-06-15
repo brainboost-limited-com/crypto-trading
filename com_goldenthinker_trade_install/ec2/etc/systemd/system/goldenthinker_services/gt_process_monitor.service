@@ -1,0 +1,16 @@
+[Unit]
+Description=Main Process Monitor Service
+After=multi-user.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/crypto_trading
+
+Restart=on-failure
+# This is the only process that will restart on failure, the other services do not restart by default
+# This service has to be copied to the folder /etc/init   so it is picked at boot time in case of electricity problems
+ExecStart=/usr/local/bin/python /crypto_trading/gt_process_monitor.py
+
+[Install]
+WantedBy=multi-user.target

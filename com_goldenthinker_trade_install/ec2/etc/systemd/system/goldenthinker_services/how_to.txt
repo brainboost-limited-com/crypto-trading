@@ -1,0 +1,11 @@
+cp etc/systemd/system/*.service /etc/systemd/system
+
+for each service 
+
+# start the service
+
+sudo systemctl start myservice
+
+#check service status
+
+sudo systemctl status myservice

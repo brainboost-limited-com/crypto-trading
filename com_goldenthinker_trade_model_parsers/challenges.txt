@@ -1,0 +1,296 @@
+New Trading Signal @ 2021-07-14 23:00 (UTC)
+Symbol: SANDUSDT
+Signal: STRONG SELL
+Strong Sell @: ~0.59261000
+Candle size: 1h (2021-07-14 23:00 UTC)
+Exchange: Binance - Earn 10% comission @ registration
+TradingView: Analyze SANDUSDT - Total Market CAP
+------------------------------------------------------
+24h Volume: 157545561.08 USDT ($316,101,419 SAND)
+24h Change: 33.88% (0.14986000)
+Market Cap: $405,333,895
+Ranking: 108
+👉 Check our Results Channel
+👉 Subscribe for our VIP Channels
+
+
+------------------------------------------------------------------
+
+New Trading Signal @ 2021-07-14 08:00 (UTC)
+Symbol: WANUSDT
+Signal: BUY
+Buy @: ~0.52090000
+Candle size: 4h (2021-07-14 08:00 UTC)
+Exchange: Binance - Earn 10% comission @ registration
+TradingView: Analyze WANUSDT - Total Market CAP
+------------------------------------------------------
+24h Volume: 846680.76 USDT ($1,565,357 WAN)
+24h Change: -8.45% (-0.04810000)
+Market Cap: $100,695,877
+Ranking: 271
+👉 Check our Results Channel
+👉 Subscribe for our VIP Channels
+
+
+
+{'symbol': 'chr/btc', 'symbol_a': 'chr', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000753'], 'words_in_signal_line': ['sell']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'chr/btc', 'symbol_a': 'chr', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000753'], 'words_in_signal_line': ['sell']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-15 00:09:02+00:00', 'channel': '@cryptosignalscanner', 'id': 642982159954977367}
+Analysing previous similar signals... {'symbol': 'chr/btc', 'symbol_a': 'chr', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000753'], 'words_in_signal_line': ['sell']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-15 00:09:02+00:00', 'channel': '@cryptosignalscanner', 'id': 642982159954977367}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+InvalidSignal: {}
+InvalidSignal: {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exchange: Binance
+#BANDUSDT
+
+Trade Type: short position
+
+Entry zone 6.20 - 6.00
+
+Amount: 3% from deposit
+
+Leverage x5
+
+
+Target:
+1) 5.80
+2) 5.65
+3) 5.30
+
+Stop 6.35
+
+-------------------------------------------------------
+{'symbol': 'band/usdt', 'symbol_a': 'band', 'symbol_b': 'usdt', 'exchange': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'strategy': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'short'}], 'buy': [{'date_in_line': '[datetime.datetime(2021, 6, 6, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['entry', 'zone']}], 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target']}], 'stoploss': [{'date_in_line': '[datetime.datetime(2021, 7, 6, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['stop']}]}
+{'symbol': 'band/usdt', 'symbol_a': 'band', 'symbol_b': 'usdt', 'exchange': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'strategy': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'short'}], 'buy': [{'date_in_line': '[datetime.datetime(2021, 6, 6, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['entry', 'zone']}], 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target']}], 'stoploss': [{'date_in_line': '[datetime.datetime(2021, 7, 6, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['stop']}], 'timestampt': '2021-07-14 20:17:51+00:00', 'channel': '@CryptoClasssssics', 'id': 8040264089742867427}
+Analysing previous similar signals... {'symbol': 'band/usdt', 'symbol_a': 'band', 'symbol_b': 'usdt', 'exchange': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'strategy': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'short'}], 'buy': [{'date_in_line': '[datetime.datetime(2021, 6, 6, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['entry', 'zone']}], 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target']}], 'stoploss': [{'date_in_line': '[datetime.datetime(2021, 7, 6, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['stop']}], 'timestampt': '2021-07-14 20:17:51+00:00', 'channel': '@CryptoClasssssics', 'id': 8040264089742867427}
+
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+Signal not valid 
+InvalidSignal: {'symbol': 'band/usdt', 'symbol_a': 'band', 'symbol_b': 'usdt', 'account': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'futures'}]}
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+{'symbol': 'sand/usdt', 'symbol_a': 'sand', 'symbol_b': 'usdt', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['201.74', '0.39621000'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.19640000', '2021', '06', '21', '13', '55'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'sand/usdt', 'symbol_a': 'sand', 'symbol_b': 'usdt', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['201.74', '0.39621000'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.19640000', '2021', '06', '21', '13', '55'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:00:03+00:00', 'channel': '@usdtradingresults', 'id': -5505915245151349276}
+Analysing previous similar signals... {'symbol': 'sand/usdt', 'symbol_a': 'sand', 'symbol_b': 'usdt', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['201.74', '0.39621000'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.19640000', '2021', '06', '21', '13', '55'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:00:03+00:00', 'channel': '@usdtradingresults', 'id': -5505915245151349276}
+Unhandled exception on my_event_handler
+
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+{'symbol': 'sand/usdt', 'symbol_a': 'sand', 'symbol_b': 'usdt', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['201.74', '0.39621000'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.19640000', '2021', '06', '21', '13', '55'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'sand/usdt', 'symbol_a': 'sand', 'symbol_b': 'usdt', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['201.74', '0.39621000'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.19640000', '2021', '06', '21', '13', '55'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:00:03+00:00', 'channel': '@cryptosignalscanner_results', 'id': -5505915245151349276}
+Analysing previous similar signals... {'symbol': 'sand/usdt', 'symbol_a': 'sand', 'symbol_b': 'usdt', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['201.74', '0.39621000'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.19640000', '2021', '06', '21', '13', '55'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:00:03+00:00', 'channel': '@cryptosignalscanner_results', 'id': -5505915245151349276}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+
+
+
+--------------------------------------------------------------------------------------------
+
+{'symbol': 'ar/bnb', 'symbol_a': 'ar', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target', 'gift', 'cards']}, {'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target']}]}
+{'symbol': 'ar/bnb', 'symbol_a': 'ar', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target', 'gift', 'cards']}, {'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target']}], 'timestampt': '2021-07-14 23:01:28+00:00', 'channel': '@airbnb3', 'id': -2486006105240943816}
+Analysing previous similar signals... {'symbol': 'ar/bnb', 'symbol_a': 'ar', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target', 'gift', 'cards']}, {'date_in_line': '[]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['target']}], 'timestampt': '2021-07-14 23:01:28+00:00', 'channel': '@airbnb3', 'id': -2486006105240943816}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+
+
+-----------------------------------------------------------------------------------------
+
+
+{'symbol': 'sand/bnb', 'symbol_a': 'sand', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[datetime.datetime(2041, 7, 14, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00134300', '2021', '07', '12', '17', '30'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'sand/bnb', 'symbol_a': 'sand', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[datetime.datetime(2041, 7, 14, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00134300', '2021', '07', '12', '17', '30'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:04:02+00:00', 'channel': '@bnbtradingresults', 'id': -8795407969319673019}
+Analysing previous similar signals... {'symbol': 'sand/bnb', 'symbol_a': 'sand', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[datetime.datetime(2041, 7, 14, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00134300', '2021', '07', '12', '17', '30'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:04:02+00:00', 'channel': '@bnbtradingresults', 'id': -8795407969319673019}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+InvalidSignal: {}
+{'symbol': 'sand/bnb', 'symbol_a': 'sand', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[datetime.datetime(2041, 7, 14, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00134300', '2021', '07', '12', '17', '30'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'sand/bnb', 'symbol_a': 'sand', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[datetime.datetime(2041, 7, 14, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00134300', '2021', '07', '12', '17', '30'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:04:03+00:00', 'channel': '@cryptosignalscanner_results', 'id': 6273276644987350834}
+Analysing previous similar signals... {'symbol': 'sand/bnb', 'symbol_a': 'sand', 'symbol_b': 'bnb', 'sell': [{'date_in_line': '[datetime.datetime(2041, 7, 14, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00134300', '2021', '07', '12', '17', '30'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:04:03+00:00', 'channel': '@cryptosignalscanner_results', 'id': 6273276644987350834}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+{'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['152.54', '0.00001083'], 'words_in_signal_line': ['profit']}, {'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00001793', '2021', '07', '14', '23', '04'], 'words_in_signal_line': ['sell']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['152.54', '0.00001083'], 'words_in_signal_line': ['profit']}, {'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00001793', '2021', '07', '14', '23', '04'], 'words_in_signal_line': ['sell']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:04:03+00:00', 'channel': '@btctradingresults', 'id': -2471809783787983785}
+Analysing previous similar signals... {'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['152.54', '0.00001083'], 'words_in_signal_line': ['profit']}, {'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00001793', '2021', '07', '14', '23', '04'], 'words_in_signal_line': ['sell']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:04:03+00:00', 'channel': '@btctradingresults', 'id': -2471809783787983785}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+{'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['152.54', '0.00001083'], 'words_in_signal_line': ['profit']}, {'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00001793', '2021', '07', '14', '23', '04'], 'words_in_signal_line': ['sell']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['152.54', '0.00001083'], 'words_in_signal_line': ['profit']}, {'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00001793', '2021', '07', '14', '23', '04'], 'words_in_signal_line': ['sell']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:04:03+00:00', 'channel': '@cryptosignalscanner_results', 'id': -2471809783787983785}
+Analysing previous similar signals... {'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['152.54', '0.00001083'], 'words_in_signal_line': ['profit']}, {'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00001793', '2021', '07', '14', '23', '04'], 'words_in_signal_line': ['sell']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-14 23:04:03+00:00', 'channel': '@cryptosignalscanner_results', 'id': -2471809783787983785}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+
+
+
+
+=================================================================================
+
+
+New Trading Signal @ 2021-07-15 01:02 (UTC)
+Symbol: SANDBTC
+Signal: STRONG SELL
+Strong Sell @: ~0.00001995
+Candle size: 1h (2021-07-15 01:00 UTC)
+Exchange: Binance - Earn 10% comission @ registration
+TradingView: Analyze SANDBTC - Total Market CAP
+------------------------------------------------------
+24h Volume: 876.64 BTC ($55,192,984 SAND)
+24h Change: 45.71% (0.00000623)
+Market Cap: $418,718,222
+Ranking: 108
+👉 Check our Results Channel
+👉 Subscribe for our VIP Channels
+
+
+
+
+{'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['180.99', '0.00001285'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['180.99', '0.00001285'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-15 01:02:04+00:00', 'channel': '@btctradingresults', 'id': -5452101148786038288}
+
+
+{'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['180.99', '0.00001285'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}]}
+{'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['180.99', '0.00001285'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-15 01:02:04+00:00', 'channel': '@cryptosignalscanner_results', 'id': -5452101148786038288}
+Analysing previous similar signals... {'symbol': 'sand/btc', 'symbol_a': 'sand', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['180.99', '0.00001285'], 'words_in_signal_line': ['profit']}], 'buy': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000710', '2021', '06', '13', '15', '27'], 'words_in_signal_line': ['buy']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-15 01:02:04+00:00', 'channel': '@cryptosignalscanner_results', 'id': -5452101148786038288}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array
+AttributeError: 'Signal' object has no attribute 'signal_array'
+
+
+-------------------------------------------------------------------------
+New Trading Signal @ 2021-07-15 01:01 (UTC)
+Symbol: CHZBTC
+Signal: SELL
+Sell @: ~0.00000770
+Candle size: 1h (2021-07-15 01:00 UTC)
+Exchange: Binance - Earn 10% comission @ registration
+TradingView: Analyze CHZBTC - Total Market CAP
+------------------------------------------------------
+24h Volume: 263.81 BTC ($35,694,287 CHZ)
+24h Change: 7.09% (0.00000051)
+Market Cap: $1,464,434,648
+Ranking: 58
+👉 Check our Results Channel
+👉 Subscribe for our VIP Channels
+
+
+{'symbol': 'chz/btc', 'symbol_a': 'chz', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000770'], 'words_in_signal_line': ['sell']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-15 01:02:02+00:00', 'channel': '@cryptosignalscanner', 'id': -1289015883508932717}
+Analysing previous similar signals... {'symbol': 'chz/btc', 'symbol_a': 'chz', 'symbol_b': 'btc', 'sell': [{'date_in_line': '[]', 'percentages': [], 'numbers': ['0.00000770'], 'words_in_signal_line': ['sell']}], 'exchange': [{'date_in_line': '[datetime.datetime(2021, 7, 10, 0, 0)]', 'percentages': [], 'numbers': [], 'words_in_signal_line': 'binance'}], 'timestampt': '2021-07-15 01:02:02+00:00', 'channel': '@cryptosignalscanner', 'id': -1289015883508932717}
+Unhandled exception on my_event_handler
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/crypto_env/lib/python3.9/site-packages/telethon/client/updates.py", line 454, in _dispatch_update
+    await callback(event)
+  File "/home/ubuntu/crypto_trading/telegram_signal_listener_3.py", line 51, in my_event_handler
+    order.execute()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_order/Order.py", line 24, in execute
+    values_from_signal = self.signal.to_array()
+  File "/home/ubuntu/crypto_trading/com_goldenthinker_trade_model/Signal.py", line 47, in to_array
+    return self.signal_array

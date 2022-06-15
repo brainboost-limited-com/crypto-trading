@@ -1,0 +1,47 @@
+sudo yum update
+
+sudo yum install automake fuse fuse-devel gcc-c++ git libcurl-devel libxml2-devel make openssl-devel
+
+git clone https://github.com/s3fs-fuse/s3fs-fuse.git
+
+
+
+which s3fs
+
+
+Step-4 :Now Compile and install the code.
+Following the set of command will compile fuse and add fuse module in the kernel.
+# cd  s3fs-fuse
+# ./autogen.sh 
+# ./configure — prefix=/usr — with-openssl
+# make 
+# sudo make install
+
+
+
+
+
+
+(base) [ec2-user@ip-172-31-21-109 s3]$ sudo s3fs -o use_path_request_style -o iam_role="com_goldenthinker_ec2_s3" -o url="https://s3-eu=central-1.amazonaws.com" -o endpoint=eu-central-1 -o dbglevel=info -o curldbg -o allow_other -o use_cache=/tmp com.goldenthinker.trade.log.bucket /home/ec2-user/s3
+(base) [ec2-user@ip-172-31-21-109 s3]$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+devtmpfs          492676       0    492676   0% /dev
+tmpfs             503444       0    503444   0% /dev/shm
+tmpfs             503444     440    503004   1% /run
+tmpfs             503444       0    503444   0% /sys/fs/cgroup
+/dev/xvda1       8376300 7426944    949356  89% /
+tmpfs             100692       0    100692   0% /run/user/1000
+s3fs             8376300 7426944    949356  89% /home/ec2-user/s3
+(base) [ec2-user@ip-172-31-21-109 s3]$ ls /home/ec2-user/s3
+
+
+
+
+(base) [ec2-user@ip-172-31-21-109 storage]$ sudo cat /etc/passwd-s3fs 
+AKIA5O4U6RJQWQ4Y7JWO:nXNsZrfL7dwolbUTXjllTW5ENmOio2dqNpGR7QYU
+(base) [ec2-user@ip-172-31-21-109 storage]$ s3fs "s3tradelog" -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=002 -o multireq_max=5 /home/ec2-user/s3
+
+
+[ec2-user@ip-172-31-18-10 ~]$ ls -l /etc/passwd-s3fs 
+-rw-r--r-- 1 root root 62 Aug 22 15:10 /etc/passwd-s3fs
+[ec2-user@ip-172-31-18-10 ~]$ sudo chmod 600 /etc/passwd-s3f
