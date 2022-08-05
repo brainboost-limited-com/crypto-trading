@@ -37,7 +37,7 @@ def get_klines_history():
 for symbol in prices:
     s = symbol['symbol']
     p = symbol['price']
-    price_history_csv_path = "historical_data/realtime_" + s + ".csv"
+    price_history_csv_path = "D:\/historical\/binance\/realtime_" + s + ".csv"
     with open(price_history_csv_path, "a+") as price_history_file:
         print("Processing : "+str(s)+","+str(p)+"\n")
         price_history_file.write(t + "," + str(s)+","+str(p)+"\n")   

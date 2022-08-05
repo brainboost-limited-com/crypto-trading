@@ -71,8 +71,9 @@ class MongoConnector:
                     #connection = pymongo.MongoClient(MongoConnector._config.get('service_bind_1_2'),int(MongoConnector._config.get('service_port_1_2')),username=MongoConnector._config.get('service_user_1_2'), password=MongoConnector._config.get('service_pass_1_2'))
                     #connection = pymongo.MongoClient(CONNECTION_STRING,tls=True,tlsCertificateKeyFile='lets-encrypt-r3.pem')
                     
-                    connection = pymongo.MongoClient('mongodb://' + MongoConnector._config.get('service_user_1_2') + ':' + MongoConnector._config.get('service_pass_1_2')+'@' + MongoConnector._config.get('service_bind_1_2') + ':' + MongoConnector._config.get('service_port_1_2')+'/')
-
+                    #connection = pymongo.MongoClient('mongodb://' + MongoConnector._config.get('service_user_1_2') + ':' + MongoConnector._config.get('service_pass_1_2')+'@' + MongoConnector._config.get('service_bind_1_2') + ':' + MongoConnector._config.get('service_port_1_2')+'/')
+                    connection = pymongo.MongoClient('mongodb://' + str(Config.get('service_bind_1_2')) + ':' + str(Config.get('service_port_1_2')))
+                    
                     self.db = connection[self.MONGO_DB]
                     MongoConnector._instance = self
                     Logger.log("mongodb direct connection :" + str(MongoConnector._config.get('service_bind_1_2')))
@@ -324,3 +325,16 @@ class MongoConnector:
             return ([BuyMarketOrder(from_dict_value=o) for o in dicts_from_db if o['side']=='BUY'] + [SellMarketOrder(from_dict_value=o) for o in dicts_from_db if o['side']=='SELL'])
     
     
+    def insert_logline(self,logline=None):
+        if logline!=None:
+            parts = logline.split(',')            
+            logline_to_doc = {
+                'log_id' : str(parts[0]),
+                'process_name' : str(parts[1]),
+                'timestamp' : str(parts[2]),
+                'code_line_number' : str(parts[3]),
+                'log_message' : str(parts[4]),
+                'time_delta' : str(parts[5])
+
+            }
+            self.db['logger'].insert_one(logline_to_doc)

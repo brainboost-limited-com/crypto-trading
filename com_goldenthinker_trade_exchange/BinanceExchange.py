@@ -323,10 +323,10 @@ class BinanceExchange(Exchange):
         if callback != None:
 
             Logger.log('Extracting .zip file to obtain csv')
-            storage_dir = '/media/external/storage/'
+            storage_dir = 'D:\/historical\/binance\/'
 
             from com_goldenthinker_trade_exchange.ExchangeConfiguration import ExchangeConfiguration
-            list_of_symbols = ExchangeConfiguration.get_default_exchange().get_list_of_symbols(upper=True)
+            list_of_symbols = ExchangeConfiguration.get_default_exchange().get_list_of_symbols()
         
             Logger.log('Starting the local kline to tick streaming process.')
             for s in list_of_symbols:
@@ -365,7 +365,7 @@ class BinanceExchange(Exchange):
                     
                         Logger.log('File ' + str(csv_file_name) + ' has been tick streamed to the system and stored in database in sequences rise/drop. ')
 
-                Logger.log('Symbol '+ s + ' has been processed.') 
+                Logger.log('Symbol '+ str(s) + ' has been processed.') 
 
             Logger.log('Process completed successfully.')
 

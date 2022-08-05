@@ -3,7 +3,7 @@ from com_goldenthinker_trade_exchange.ExchangeConfiguration import ExchangeConfi
 
 from com_goldenthinker_trade_datasource_network.TickerSocketAllSymbols import TickerSocketAllSymbols
 
-from com_goldenthinker_trade_log.Logger import Logger
+from com_goldenthinker_trade_logger.Logger import Logger
 
 Logger.set_process_name = 'gt_public_marketdata_to_from_files_to_db'
 

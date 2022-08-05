@@ -1,8 +1,12 @@
 from inspect import currentframe, getframeinfo, stack
+import sys
 import time
 from datetime import datetime
+from urllib.parse import uses_params
 import requests
 import os
+
+
 
 class Logger:
         
@@ -35,6 +39,12 @@ class Logger:
     @classmethod
     def csv_enabled(cls):
         return True
+
+    @classmethod
+    def database(cls):
+        from com_goldenthinker_trade_database.MongoConnector import MongoConnector
+        return MongoConnector.get_instance()
+
     
     _last_time = None
     _delta = None
@@ -42,7 +52,7 @@ class Logger:
     
     @classmethod
     def log(cls, trade_log,telegram=False,public=False,trace=False):
-        
+       
         def if_later_than_12am_set_new_default_access_permission_for_new_log_file():
             now = datetime.now()
             tomorrow12am = now.replace(hour=23, minute=59, second=59, microsecond=0)
@@ -68,6 +78,9 @@ class Logger:
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
                 my_trace = exc_type, fname, exc_tb.tb_lineno
                 current_log_line = str(hash(str(cls.get_process_name()[0:15]) + str(datetime.now())))[1:] + "," + str(cls.get_process_name()) + "," + str(datetime.now()) + "," + "%s:%d" % (caller.filename.split("/")[-1], caller.lineno) + "," +  str(trade_log) + "," + str(my_trace) + "," + str(Logger._delta) + "\n"
+            if Logger.database()!=None:
+                if_later_than_12am_set_new_default_access_permission_for_new_log_file()
+                Logger.database().insert_logline(current_log_line)               
             if Logger.csv_enabled:
                 if cls.enable_storage()==False:
                     cls.logfile_path = "d:\\cryptologs\\trader_log-" + current_date + ".csv"
@@ -91,3 +104,4 @@ class Logger:
                 #cls._telegram_notifier.send_message(message=current_log_line)
             #if Logger.terminal_output_enabled:
             #    print(current_log_line)
+        
