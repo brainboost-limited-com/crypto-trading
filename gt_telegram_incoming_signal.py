@@ -1,4 +1,5 @@
 from telethon import TelegramClient, events
+from com_goldenthinker_trade_database.MongoConnector import MongoConnector
 from com_goldenthinker_trade_model_parsers.SignalParser2 import SignalParser2
 
 from com_goldenthinker_trade_logger.Logger import Logger
@@ -6,7 +7,7 @@ from com_goldenthinker_trade_logger.Logger import Logger
 api_id = 3820623
 api_hash = 'de74cd9776235755c03d27cc0d4b1507'
 
-client = TelegramClient('com_goldenthinker_trade_sessions_data/session_telegram_20211115004745.session', api_id, api_hash)
+client = TelegramClient('telethon_robot_session.session', api_id, api_hash)
 
 Logger.set_process_name(name='gt_telegram_incoming_signal')
 

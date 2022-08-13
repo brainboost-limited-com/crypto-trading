@@ -25,6 +25,7 @@ from com_goldenthinker_trade_model_order.SellMarketOrder import SellMarketOrder
 from com_goldenthinker_trade_simulator.Simulator import Simulator
 from com_goldenthinker_trade_utils.Utils import Utils
 #import _thread
+import traceback
 
 class BinanceExchange(Exchange):
     
@@ -108,8 +109,10 @@ class BinanceExchange(Exchange):
             return portfolio_dict
         except BinanceRequestException:
             Logger.log("BinanceExchange request, portfolio, BinanceRequestException ")
+            traceback.print_stack()
         except BinanceAPIException:
             Logger.log("BinanceExchange request, portfolio, BinanceRequestException ")
+            traceback.print_stack()
     
     def get_list_of_symbols(self):
         Logger.log("BinanceExchange request: get_list_of_symbols ")

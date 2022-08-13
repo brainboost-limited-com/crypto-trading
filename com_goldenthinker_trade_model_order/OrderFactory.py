@@ -96,8 +96,10 @@ class OrderFactory():
             percentage_of_balance_to_invest = symbol.percent_of_balance(symbol.what_percentage_is_another_number_of_myself(average_max_drop_min_rise))
             recommended_amount_to_invest = (CryptoFloat(symbol,balance).division(CryptoFloat(symbol,100)))*percentage_of_balance_to_invest
             if recommended_amount_to_invest > CryptoFloat(symbol,symbol.get_min_notional())*CryptoFloat(symbol,float_value=2.0):
+                Logger.log("Amount " + str(recommended_amount_to_invest) + " is higher than min notional, creating_order " + str(symbol.uppercase_format()))
                 return BuyMarketOrder(quote_amt=recommended_amount_to_invest)
             else:
+                Logger.log("Amount to invest is not higher than twice  the min notional for symbol not_enough_to_create_order" + symbol.uppercase_format())
                 return None
  
             

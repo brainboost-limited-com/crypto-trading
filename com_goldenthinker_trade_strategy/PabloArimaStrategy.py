@@ -39,6 +39,7 @@ class PabloArimaStrategy(Strategy):
                                 o = Portfolio.instance().generate_buy_order(Symbol(d['symbol'].split('_')[1]))
                                 #o = BuyOrder(symbol=Symbol(d['symbol'].split('_')[1]),ptg=5)
                                 if o is not None:
+                                    o.save()
                                     orders_from_analysis.append(o)
         
             Logger.log('BUY SPOT MARKET ORDERS generated ')

@@ -89,6 +89,7 @@ class TinyDbConnector:
     def channels_processed_so_far(self):
         q = Query()
         texts = [q.get('channel').split('/')[-1] for q in self.__class__.instance_for_channels().db.search(q.channel.exists())]
-        print("Continue processing from the last channel " + texts[-1])
+        if len(texts) > 0:
+            print("Continue processing from the last channel " + texts[-1])
         return texts
         
