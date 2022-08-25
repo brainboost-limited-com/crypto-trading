@@ -53,7 +53,7 @@ class Logger:
     
     
     @classmethod
-    def log(cls, trade_log,telegram=False,public=False,trace=False,external=False):
+    def log(cls, trade_log,telegram=False,public=False,trace=False,external=True):
         if external==True:
             r = requests.get(Config.get('base_url_1_5'),{'trade_log':trade_log,'telegram':telegram,'public':public,'trace':trace})
         else:
@@ -78,18 +78,22 @@ class Logger:
                 if trace==False:
                     current_log_line = str(hash(str(cls.get_process_name()[0:15]) + str(datetime.now())))[1:] + "," + str(cls.get_process_name()) + "," + str(datetime.now()) + "," + "%s:%d" % (caller.filename.split("/")[-1], caller.lineno) + "," +  str(trade_log) + "," + str(Logger._delta) + "\n"
                 else:
-                    exc_type, exc_obj, exc_tb = sys.exc_info()
-                    fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                    my_trace = exc_type, fname, exc_tb.tb_lineno
-                    current_log_line = str(hash(str(cls.get_process_name()[0:15]) + str(datetime.now())))[1:] + "," + str(cls.get_process_name()) + "," + str(datetime.now()) + "," + "%s:%d" % (caller.filename.split("/")[-1], caller.lineno) + "," +  str(trade_log) + "," + str(my_trace) + "," + str(Logger._delta) + "\n"
+                    try:
+                        exc_type, exc_obj, exc_tb = sys.exc_info()
+                        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                        my_trace = exc_type, fname, exc_tb.tb_lineno
+                        current_log_line = str(hash(str(cls.get_process_name()[0:15]) + str(datetime.now())))[1:] + "," + str(cls.get_process_name()) + "," + str(datetime.now()) + "," + "%s:%d" % (caller.filename.split("/")[-1], caller.lineno) + "," +  str(trade_log) + "," + str(my_trace) + "," + str(Logger._delta) + "\n"
+                    except:
+                        pass
+                
                 if Logger.database()!=None:
                     if_later_than_12am_set_new_default_access_permission_for_new_log_file()
                     Logger.database().insert_logline(current_log_line)               
                 if Logger.csv_enabled:
                     if cls.enable_storage()==False:
-                        cls.logfile_path = "d:\\cryptologs\\trader_log-" + current_date + ".csv"
+                        cls.logfile_path = "c:\\cryptologs\\trader_log-" + current_date + ".csv"
                     else:
-                        cls.logfile_path = "d:\\cryptologs\\trader_log-" + current_date + ".csv"
+                        cls.logfile_path = "c:\\cryptologs\\trader_log-" + current_date + ".csv"
                     if_later_than_12am_set_new_default_access_permission_for_new_log_file()
                     with open(cls.logfile_path, "a+") as log_file:
                         log_file.write(current_log_line)   

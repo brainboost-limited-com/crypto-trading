@@ -28,10 +28,10 @@ async def my_event_handler(event):
                     if s.valid():
                         s.save()
                         MongoConnector.get_instance().save_signal(s.signal)
-                        Logger.log('Signal inserted: ' + str(s.signal)) #return message.text
+                        Logger.log('Signal inserted: ' + str(s.signal),external=True) #return message.text
             except TypeError:
-                Logger.log("Signal not valid")
-        Logger.log('{}'.format(event))
+                Logger.log("Signal not valid",external=True)
+        Logger.log('{}'.format(event),external=True)
 
 client.start()
 client.run_until_disconnected()
