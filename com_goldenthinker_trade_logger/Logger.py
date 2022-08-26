@@ -91,9 +91,9 @@ class Logger:
                     Logger.database().insert_logline(current_log_line)               
                 if Logger.csv_enabled:
                     if cls.enable_storage()==False:
-                        cls.logfile_path = "c:\\cryptologs\\trader_log-" + current_date + ".csv"
+                        cls.logfile_path = "d:\\cryptologs\\trader_log-" + current_date + ".csv"
                     else:
-                        cls.logfile_path = "c:\\cryptologs\\trader_log-" + current_date + ".csv"
+                        cls.logfile_path = "d:\\cryptologs\\trader_log-" + current_date + ".csv"
                     if_later_than_12am_set_new_default_access_permission_for_new_log_file()
                     with open(cls.logfile_path, "a+") as log_file:
                         log_file.write(current_log_line)   

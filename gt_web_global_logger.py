@@ -1,3 +1,4 @@
+from com_goldenthinker_trade_config.Config import Config
 from com_goldenthinker_trade_logger.Logger import Logger
 import cherrypy
 import socket
@@ -17,5 +18,5 @@ class GlobalLogger(object):
     
 
 Logger.log("Logger gateway starting",telegram=True)
-cherrypy.config.update({'server.socket_host': '100.96.1.34'})
-cherrypy.quickstart(GlobalLogger())
+cherrypy.quickstart(GlobalLogger(), '/',"frontend/cherrypy.cfg")
+cherrypy.config.update({'server.socket_host': Config.get('external_ip_1')})
