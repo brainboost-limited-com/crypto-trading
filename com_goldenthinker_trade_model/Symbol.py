@@ -33,12 +33,13 @@ class Symbol:
                 self.symbol = symbol_str
                 symbol_data = ExchangeConfiguration.get_default_exchange().get_symbol_information(self)
             else:
-                self.symbol = symbol_str
-                print('symbol is: ' + str(symbol_str))
-                self.symbol_a = symbol_str.split('/')[0]
-                self.symbol_b = symbol_str.split('/')[1]
-                from com_goldenthinker_trade_model.Symbol import Symbol
-                symbol_data = ExchangeConfiguration.get_default_exchange().get_symbol_information(Symbol(self.symbol_a+self.symbol_b))
+                if '/' in symbol_str:
+                    self.symbol = symbol_str
+                    print('symbol is: ' + str(symbol_str))
+                    self.symbol_a = symbol_str.split('/')[0]
+                    self.symbol_b = symbol_str.split('/')[1]
+                    from com_goldenthinker_trade_model.Symbol import Symbol
+                    symbol_data = ExchangeConfiguration.get_default_exchange().get_symbol_information(Symbol(self.symbol_a+self.symbol_b))
             
             
             self.step = symbol_data['step']
