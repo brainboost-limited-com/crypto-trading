@@ -97,7 +97,7 @@ class MongoConnector:
         
     def query_collection(self,collection_name=None, query={}):
         data = self.db[collection_name].find(query, no_cursor_timeout=True)
-        Logger.log("query_collection: " + str(collection_name) + " " + str(query) + " results: " + str(data.count()))
+        Logger.log("query_collection: " + str(collection_name) + " " + str(query).replace(',','_') + " results: " + str(data.count()))
         return data
     
     def list_collection_names(self):

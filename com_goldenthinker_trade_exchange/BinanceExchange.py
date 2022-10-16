@@ -112,7 +112,7 @@ class BinanceExchange(Exchange):
             traceback.print_stack()
         except BinanceAPIException:
             Logger.log("BinanceExchange request, portfolio, BinanceRequestException ")
-            traceback.print_stack()
+
     
     def get_list_of_symbols(self):
         Logger.log("BinanceExchange request: get_list_of_symbols ")

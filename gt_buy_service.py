@@ -5,7 +5,9 @@ from com_goldenthinker_trade_strategy.PabloArimaStrategy import PabloArimaStrate
 from com_goldenthinker_trade_strategy.Strategy import Strategy
 from com_goldenthinker_trader_robot.Robot import Robot
 from com_goldenthinker_trade_config.Config import Config
+from com_goldenthinker_trade_logger.Logger import Logger
 
+Logger.set_process_name(name='gt_buy_service')
 
 
 sandbox = Config.sandbox()   

@@ -53,9 +53,9 @@ class Logger:
     
     
     @classmethod
-    def log(cls, trade_log,telegram=False,public=False,trace=False,external=True):
-        if external==True:
-            r = requests.get(Config.get('base_url_1_5'),{'trade_log':trade_log,'telegram':telegram,'public':public,'trace':trace})
+    def log(cls, trade_log,pname=None,telegram=False,public=False,trace=False,external=True):
+        if external==True and pname!=None and 'gt_telegram_incoming_signal' in pname:
+            r = requests.get(Config.get('base_url_1_5'),{'trade_log':trade_log,'pname':pname,'telegram':telegram,'public':public,'trace':trace})
         else:
             def if_later_than_12am_set_new_default_access_permission_for_new_log_file():
                 now = datetime.now()
@@ -73,6 +73,7 @@ class Logger:
                 Logger._last_time = datetime.now()
                 current_date = Logger._last_time.strftime("%Y_%m_%d")
                 caller = getframeinfo(stack()[1][0])
+                current_log_line = ''
                 if cls.get_process_name()==None:
                     cls.set_process_name('initializing_logger')
                 if trace==False:
@@ -88,7 +89,7 @@ class Logger:
                 
                 if Logger.database()!=None:
                     if_later_than_12am_set_new_default_access_permission_for_new_log_file()
-                    Logger.database().insert_logline(current_log_line)               
+                    Logger.database().insert_logline(current_log_line[0:-1])               
                 if Logger.csv_enabled:
                     if cls.enable_storage()==False:
                         cls.logfile_path = "d:\\cryptologs\\trader_log-" + current_date + ".csv"

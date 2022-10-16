@@ -66,6 +66,7 @@ class PabloArimaStrategy(Strategy):
 
 
             for o in orders_to_execute:
+                Logger.log('EXECUTING ORDER ' + str(o.get_base_qty()),telegram=True)
                 Robot.get_instance().buy(order=o)
                 
             Logger.log('robot.py finished.')
