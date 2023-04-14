@@ -1,12 +1,14 @@
-from binance_client import BinanceClient
-from trading_algorithm import TradingAlgorithm
+python
+from binance_p2p import BinanceP2P
 
-client = BinanceClient(api_key='your_api_key', api_secret='your_api_secret')
-symbols = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT']
-algorithm = TradingAlgorithm()
+def main(api_key, api_secret):
+    binance_p2p = BinanceP2P(api_key, api_secret)
+    currencies = binance_p2p.get_available_currencies()
+    payment_methods = binance_p2p.get_available_payment_methods()
+    print("Available currencies:", currencies)
+    print("Available payment methods:", payment_methods)
 
-while True:
-    prices = client.get_symbol_prices(symbols)
-    signals = algorithm.generate_signals(prices)
-    orders = algorithm.generate_orders(signals, prices)
-    client.execute_orders(orders)
+if __name__ == "__main__":
+    api_key = "YOUR_API_KEY"
+    api_secret = "YOUR_API_SECRET"
+    main(api_key, api_secret)
