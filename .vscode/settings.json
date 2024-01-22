@@ -5,5 +5,10 @@
         "./com_goldenthinker_trade_exchange/com_goldenthinker_trade_exchange_kraken/kraken-wsclient-py/kraken_wsclient_py",
         "./modified_packages/telethon_async"
     ],
-    "workbench.colorTheme": "Sepia"
+    "workbench.colorTheme": "Sepia",
+    "python.testing.pytestArgs": [
+        "com_goldenthinker_trade_test"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
